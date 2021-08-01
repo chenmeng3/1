@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 2fr 4fr;
+            grid-template-rows: 1fr 9fr;
+        }
+        .a0{
+            background-color: #282828;
+            color:white;
+            text-align: center;
+        }
+        .b0{
+            background: color #1e2933;;
+            grid-column: 2/4;
+        }
+        .b1{
+            border:black solid;
+         float: left; 
+       background-color: white;
+       margin-top: 15px;
+       margin-left: 10px;
+       height: 55%;
+       width: 80%;     
+        }
+        .b2{
+            float: right;
+            width: 15%;
+        }
+        .c0{
+            float: left;
+            background-color: #282828;
+            color: white;
+        }
+        .d0{
+            background: color #e3e6ee;;
+            border: solid #e3e6ee;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="a0">
+            <h3>LOGO示例</h3>
+        </div>
+        <div class="b0">
+            <div class="b1"><span><img src="图片/14.png" alt=""></span>
+            <span>请输入关键字</span>
+            </div>
+            <div class="b2"><p><img src="图片/23.png" alt=""></p></div>
+        </div>
+        <div class="c0">
+            <hr>
+            <div style="display: inline-flex;">
+                <div style="line-height: 10px;"><span><img src="图片/1.png" alt=""></span></div>
+                <div>
+                     <p style="margin-bottom: 0px;">名称示例</p>
+                     <h6 style="margin-top: 0px;">职位示例</h6>
+                </div>
+            </div>
+            <hr>
+            <div><h6>菜单</h6>
+            <span><img src="图片/2.png" alt=""></span>
+            <span>仪表盘</span>
+            </div>
+            <div>
+                <span><img src="图片/3.png" alt=""></span>
+                <span>用户列表</span>
+            </div>
+            <div>
+                <span><img src="图片/4.png" alt=""></span>
+                <span>文件</span>
+            </div>
+            <div style="background-color:rgb(106, 106, 219)">
+                <span><img src="图片/5.png" alt=""></span>
+                <span>聊天</span>
+                <span style="float: right;"><img src="图片/29.png" alt=""></span>
+            </div>
+            <div>
+                <span><img src="图片/6.png" alt=""></span>
+                <span>项目</span>
+            </div>
+            <div>
+                <span><img src="图片/7.png" alt=""></span>
+                <span>日程表</span>
+            </div>
+            <div>
+                <span><img src="图片/8.png" alt=""></span>
+                <span>支付方式</span>
+            </div>
+            <h6>帮助</h6>
+            <div><span><img src="图片/9.png" alt=""></span>
+             <span>需要帮助？</span> 
+            </div>
+            <div><span><img src="图片/10.png" alt=""></span>
+            <span>联系我们</span>
+            </div>
+            <h6>设置</h6>
+            <div>
+                <span><img src="图片/11.png" alt=""></span>
+                <span>账号设置</span>
+            </div>
+            <div>
+                <span><img src="图片/12.png" alt=""></span>
+                <span>深色模式</span>
+            </div>
+            <div>
+                <span><img src="图片/13.png" alt=""></span>
+                <span>退出</span>
+            </div>
+        </div>
+        <div class="d0">
+            <div style="background-color:#e3e6ee; color:black; border: white solid 1px;" >
+                <span style="margin-left: 10px;">用户列表</span>
+                <span style="float: right; margin-right: 10px;">新消息</span>
+            </div>
+            <div style="display: flex  table-column;">
+             <div style="display: inline-flex;">
+                <div style="line-height: 10px;"><span><img src="图片/15.png" alt=""></span></div>
+                <div>
+                     <p style="margin-bottom: 0px; margin-left: 33px;">名称示例 <span style="float: right;">4:00PM</span></p>
+                     <h6 style="margin-top: 0px; margin-left: 33px;">您现在应该可以访问所有文档您可以现在试试看...</div></h6>
+                        
+                </div>
+             </div>
+             <div style="display: inline-flex; background-color: #fff; border-left: solid blue 5px;">
+                <div style="line-height: 10px;"><span><img src="图片/16.png" alt=""></span></div>
+                <div>
+                     <p style="margin-bottom: 0px; margin-left: 33px; color: black;">名字示例 <span style="float: right;">3:45PM</span></p>
+                     <h6 style="margin-top: 0px; margin-left: 33px; color: black;">您现在应该可以访问所有文档您可以现在试试看...</h6>
+                </div>
+             </div>
+             <div style="display: inline-flex;">
+                <div style="line-height: 10px;"><span><img src="图片/17.png" alt=""></span></div>
+                <div>
+                     <p style="margin-bottom: 0px; margin-left: 33px;">新项目 <span style="float: right;">昨天</span></p>
+                     <h6 style="margin-top: 0px; margin-left: 33px;">您现在应该可以访问所有文档您可以现在试试看...</h6>
+                </div>
+             </div>
+             <div style="display: inline-flex;">
+                <div style="line-height: 10px;"><span><img src="图片/18.png" alt=""></span></div>
+                <div>
+                     <p style="margin-bottom: 0px; margin-left: 33px;">进度更新 <span style="float: right;">5天前</span></p>
+                     <h6 style="margin-top: 0px; margin-left: 33px;">您现在应该可以访问所有文档您可以现在试试看...</h6>
+                </div>
+             </div>
+             <div style="display: inline-flex;">
+                <div style="line-height: 10px;"><span><img src="图片/19.png" alt=""></span></div>
+                <div>
+                     <p style="margin-bottom: 0px; margin-left: 53px;">工作期望 <span style="float: right;">1周前</span></p>
+                     <h6 style="margin-top: 0px; margin-left: 53px;">您现在应该可以访问所有文档您可以现在试试看...</h6>
+                </div>
+             </div>
+             <div style="display: inline-flex;">
+                <div style="line-height: 10px;"><span><img src="图片/20.png" alt=""></span></div>
+                <div>
+                     <p style="margin-bottom: 0px; margin-left: 33px;">第一个项目 <span style="float: right;">3周前</span></p>
+                     <h6 style="margin-top: 0px; margin-left: 33px;">您现在应该可以访问所有文档您可以现在试试看...</h6>
+                </div>
+             </div>
+             <div style="display: inline-flex;">
+                <div style="line-height: 10px;"><span><img src="图片/21.png" alt=""></span></div>
+                <div>
+                     <p style="margin-bottom: 0px; margin-left: 53px;">新工作机会 <span style="float: right;">2019.10.03</span></p>
+                     <h6 style="margin-top: 0px; margin-left: 53px;">您现在应该可以访问所有文档您可以现在试试看...</h6>
+                </div>
+             </div>
+             <div style="display: inline-flex;">
+                <div style="line-height: 10px;"><span><img src="图片/22.png" alt=""></span></div>
+                <div>
+                     <p style="margin-bottom: 0px; margin-left: 33px;">恭喜啦 <span style="float: right;">2019.10.02</span></p>
+                     <h6 style="margin-top: 0px; margin-left: 33px;">您现在应该可以访问所有文档您可以现在试试看...</h6>
+                </div>
+             </div>
+            </div>
+            <div>
+             <div>
+                <span style="margin-left: 10px;">新团队成员</span>
+                <span style="float: right;"><img src="图片/24.png" alt=""></span>
+             </div>
+             <div>
+                <p><img src="图片/25.png" alt="">名字示例<span style="float: right">9:52AM</span></p>
+                <p style="background-color: blue; color: white; border: blue 2px solid; border-radius: 5px; width: 400px;">嗨！王小样！我们真的非常欢迎您来加入我们的团队</p>
+             </div>
+             <div>
+                 <p style="text-align: end;">11:08AM</p>
+                 <p style=" background-color: gray; color: black; border: gray 2px solid; border-radius: 5px; width: 400px; margin-left: 400px;">谢谢您，我很高兴加入这个出色的设计个出色的设计个出色的设团队！
+                    非常感谢能有机会开发一些会影响人们生活的产品。我等不及要开始了！</p>
+             </div>
+             <div>
+                <p><img src="图片/25.png" alt="">名字示例<span style="float: right; margin-right: 300px;">1:15PM</span></p>
+                <p style="background-color: blue; color: white; border: blue 2px solid; border-radius: 5px; width: 400px;">我们很高兴有您，我们喜欢您在面试中向我们展示的工作，
+                    并且您非常适合我们团队和公司中的我们很高兴有您每个人。 我们很高兴有您如果您有任何疑问，请随时询问，团队中的某个人将为您提供帮助。</p>
+             </div>
+             <div>
+                <p style="background-color: blue; color: white; border: blue 2px solid; border-radius: 5px; width: 400px;">我们很高兴有您，我们喜欢您在面试中向我们展示的工作，
+                    并且您非常适合我们团队和公司中的我们很高兴有您每个人。</p>
+             </div>
+             <div>
+                <p style="text-align: end;">2：28PM</p>
+                <p style=" background-color: gray; color: black; border: gray 2px solid; border-radius: 5px; width: 400px; margin-left: 400px;">谢谢您，我很高兴加入这个出色的设计个出色的设计个出色的设团队！
+                   非常感谢能有机会开发一些会影响人们生活的产品。我等不及要开始了！</p>
+             </div>
+             <div>
+                <p><img src="图片/26.png" alt="">Angela Lopez<span style="float: right; margin-right: 300px;">2:59PM</span></p>
+                <p style="background-color: blue; color: white; border: blue 2px solid; border-radius: 5px; width: 400px;">谢谢您，我很高兴加入这个出色的设计个出色的设计个出色的设团队！
+                    非常感谢能有机会开发一些会影响人们生活的产品。我等不及要开始了！</p>
+             </div>
+             <div>
+                <p><img src="图片/27.png" alt="">Terry Griffin<span style="float:right; margin-right: 300px;">3:45PM</span></p>
+                <p style="background-color: blue; color: white; border: blue 2px solid; border-radius: 5px; width: 400px;">恭喜，王小样，我知道您以后会觉着这是一个非常棒的团队！</p>
+             </div>
+             <div>
+                <span style="margin-left: 10px;">在这里输入</span>
+                <span style="float: right;"><img src="图片/28.png" alt=""></span>
+             </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
