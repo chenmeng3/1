@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+       <h1>创建账户</h1>
+       <div class="d1">
+        <p>用户名</p>
+        <input type="text" placeholder="请输入用户名" id="i1">
+        <p id="n1"></p>
+       </div>
+       <div class="d2">
+        <p>密码</p>
+        <input type="text" placeholder="请输入密码" id="i2">
+        <p id="n2"></p>
+       </div>
+       <div class="d3">
+        <p>确认密码</p>
+        <input type="text" placeholder="请输入密码" id="i3">
+        <p id="n3"></p>
+        </div>
+        <div class="d4">
+        <p>手机号码</p>
+        <input type="text" placeholder="请输入手机号码" id="i4">
+        <p id="n4"></p>
+        </div>
+        <br>
+        <br>
+        <div class="d5">
+        <button onclick="item()">提交</button>
+        </div>
+   </div>
+    <script>
+        function item(){
+            var zhangReg = /^[A-z0-9_-]{4,16}$/;//账号正则表达式
+            var miReg = /^1[0-5]{2}[6-9]{3}[a-d]{2}$/i;//密码正则表达式
+            var phoneReg = /^1[3-9][0-9]{9}$/;//手机号正则表达式
+            i2 = document.getElementById("i2").value;
+            i3 = document.getElementById("i3").value;
+            if(zhangReg.test(document.getElementById("i1").value))
+            {
+                document.getElementById("n1").innerHTML = "用户名合法";
+                document.getElementById("n1").style.color = "green"
+            }else{
+                document.getElementById("n1").innerHTML = "用户名不合法";
+                document.getElementById("n1").style.color = "red"
+            }
+            console.log(miReg.test(i2))
+            if(miReg.test(i2))
+            {
+                document.getElementById("n3").innerHTML = "密码合法";
+                document.getElementById("n3").style.color = "green"
+            }else{
+                document.getElementById("n3").innerHTML = "密码不合法";
+                document.getElementById("n3").style.color = "red"
+            }
+            if(i2 != i3 )
+            {
+                document.getElementById("n3").innerHTML = "密码不一致或密码不合法";
+                document.getElementById("n3").style.color = "red"
+            }else{
+                document.getElementById("n3").innerHTML = "密码一致";
+                document.getElementById("n3").style.color = "green"
+            }
+            
+            if(phoneReg.test(document.getElementById("i4").value))
+            {
+                document.getElementById("n4").innerHTML = "手机号码合法";
+                document.getElementById("n4").style.color = "green"
+            }else{
+                document.getElementById("n4").innerHTML = "手机号码不合法";
+                document.getElementById("n4").style.color = "red"
+            }
+        }
+    </script>
+</body>
+</html>
